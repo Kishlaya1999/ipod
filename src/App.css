@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lock-btn{
+  width: 40px;
+  height: 4px;
+  cursor: pointer;
+  margin-left: 40px;
+  background-color: black;
+}
+
+.ipod {
+  width: 300px;
+  height: 500px;
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 10px 0;
+}
+
+.screen {
+  position: relative;
+  height: 50%;
+  width: 90%;
+  margin: 20px 0;
+  border: 3px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.screen-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------------------------------------- Navigation Menu Section ----------------------------------------------------------------- */
+.navigation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+  background-color: hsl(0, 0%, 92%);
+  position: relative;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+.outer i,
+span {
+  color: hsl(0, 0%, 50%);
+  cursor: pointer;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 80%);
+  width: 90px;
+  height: 90px;
+  box-shadow: inset 0px 0px 10px 0px;
+}
+
+.inner i {
+  color: black;
+}
+
+
+.menu {
+  position: absolute;
+  top: 15px;
+}
+
+.fwd {
+  position: absolute;
+  bottom: 15px;
+}
+
+/** Screen Menu styles */
+
+.screen-menu {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+}
+
+.heading-box {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ipod-menu {
+  list-style: none;
+  height: 120px;
+}
+
+.ipod-menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ipod-menu-items span {
+  color: black;
+}
+
+.active {
+  background-color: rgb(81, 78, 255);
+  color: white;
+}
+
+
+/* All songs Component Styles */
+.all-songs {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.song {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  margin-top: 30px;
+}
+
+.song-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-img img {
+  width: 80%;
+}
+
+.song-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-info span {
+  font-size: 13px;
+}
+
+.music-controls-and-progress-bar {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height:50px;
+  padding:0 10px;
+  position: absolute;
+  margin: auto;
+  bottom: 8px;
+  gap:10px;
+  left: 0;
+  right: 0;
+  
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  border: 1px solid black;
+  padding: 1px;
+}
+
+.progress {
+  background: #2e4eff;
+  width: 0%;
+  height: 100%;
+  transition: all 1s;
+}
+
+
+.lock-screen{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(21, 21, 21);
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lock-screen span{
+  cursor:default;
+}
+
+.lock-screen .time{
+  color: white;
+  font-size:1.5rem;
+  font-weight:600;
+}
